@@ -22,9 +22,15 @@
     --textcolor:#fff;
 }
 
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
 body{
     background-color: var(--lightpink);
     color: var(--textcolor);
+    font-size: 1.5em;
 }
 
 section{
@@ -32,40 +38,73 @@ section{
     padding: 10em 10% 2em;
 }
 
-nav > img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
-.navbar{
+.cabeca{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     z-index: 100;
-    background-color: var(--darkpink);
+    background-color: var(--textcolor);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.5em 10%;
+    padding: 6px 6%;
 }
 
-ul > li > a{
-    color: #fff;
-    cursor: pointer;
+header > img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
 }
 
-ul > li > a:hover{
+#navbar > a{
+    font-size: 12px;
+    color: #FF24ED;
+    margin-left: 2.5em;
+}
+
+#navbar > a:hover,
+#navbar > a.active{
     color: black;
-    cursor: pointer;
 }
 
-#contact > a > i{
-    color:var(--textcolor);
-    font-size: 1em;
+section.shop{
+    background-color: var(--darkpink);
 }
 
-#contact > a > i:hover{
-    color: black;
+section.about{
+    background-color: var(--lightpink);
+}
+
+section.best{
+    background-color: var(--darkpink);
+}
+
+section.contact{
+    background-color: var(--lightpink);
+}
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact > a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    margin: 1.5em 1em 2em 0px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid var(--textcolor);
+    color: var(--textcolor);
+    transition: .3s ease;
+}
+
+#contact > a:hover{
+    background-color: var(--darkpink);
+    box-shadow: 0 0 20px var(--darkpink);
 }

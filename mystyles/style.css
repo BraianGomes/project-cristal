@@ -17,8 +17,8 @@
 }
 
 :root{
-    --lightpink:#FF92F6;
-    --darkpink:#FF24ED;
+    --lightblue:#42D5DD;
+    --darkblue:#00BEB3;
     --textcolor:#fff;
 }
 
@@ -28,13 +28,13 @@ html{
 }
 
 body{
-    background-color: var(--lightpink);
+    min-height: 100vh;
+    background-color: var(--lightblue);
     color: var(--textcolor);
     font-size: 1.5em;
 }
 
 section{
-    height: auto;
     padding: 10em 10% 2em;
 }
 
@@ -52,8 +52,8 @@ section{
 }
 
 header > img{
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
 }
 
@@ -82,8 +82,8 @@ header > img{
 }
 
 #search > a:hover{
-    background-color: var(--darkpink);
-    box-shadow: 0 0 20px var(--darkpink);
+    background-color: var(--darkblue);
+    box-shadow: 0 0 20px var(--darkblue);
 }
 
 .button{
@@ -93,7 +93,7 @@ header > img{
     font-weight: bold;
     margin: 2em 0px 3em 1em;
     background-color:var(--textcolor);
-    color: var(--darkpink);
+    color: var(--darkblue);
     border-radius: 1.5em;
     box-shadow: 0px 0px 1em var(--textcolor);
     letter-spacing: 1px;
@@ -105,7 +105,7 @@ header > img{
 }
 
 section.shop{
-    background-color: var(--darkpink);
+    background-color: var(--darkblue);
 }
 
 #servicesContainer{
@@ -141,15 +141,15 @@ section.shop{
 }
 
 section.about{
-    background-color: var(--lightpink);
+    background-color: var(--darkblue);
 }
 
 section.best{
-    background-color: var(--darkpink);
+    background-color: var(--lightblue);
 }
 
 section.contact{
-    background-color: var(--lightpink);
+    background-color: var(--darkblue);
 }
 #social{
     display: flex;
@@ -173,6 +173,6 @@ section.contact{
 }
 
 #social > a:hover{
-    background-color: var(--darkpink);
-    box-shadow: 0 0 20px var(--darkpink);
+    background-color: var(--lightblue);
+    box-shadow: 0 0 20px var(--lightblue);
 }

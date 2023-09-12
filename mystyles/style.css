@@ -52,8 +52,8 @@ section{
 }
 
 header > img{
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
 }
 
@@ -66,6 +66,24 @@ header > img{
 #navbar > a:hover,
 #navbar > a.active{
     color: black;
+}
+
+#search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    font-size: 1em;
+    margin: 1em 0.5em 1em 0px;
+    background: transparent;
+    border: 2px solid var(--textcolor);
+    color: var(--textcolor);
+    transition: .3s ease;
+}
+
+#search > a:hover{
+    background-color: var(--darkpink);
+    box-shadow: 0 0 20px var(--darkpink);
 }
 
 section.shop{
@@ -83,13 +101,13 @@ section.best{
 section.contact{
     background-color: var(--lightpink);
 }
-#contact{
+#social{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#contact > a{
+#social > a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -104,7 +122,7 @@ section.contact{
     transition: .3s ease;
 }
 
-#contact > a:hover{
+#social > a:hover{
     background-color: var(--darkpink);
     box-shadow: 0 0 20px var(--darkpink);
 }

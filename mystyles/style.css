@@ -40,7 +40,7 @@ section{
 
 .cabeca{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     z-index: 100;
     background-color: var(--textcolor);
@@ -58,9 +58,9 @@ header > img{
 }
 
 #navbar > a{
-    font-size: 12px;
-    color: #FF24ED;
-    margin-left: 2.5em;
+    font-size: 15px;
+    color: var(--darkblue);
+    margin-left: 1em;
 }
 
 #navbar > a:hover,
@@ -76,7 +76,6 @@ header > img{
     font-size: 1em;
     margin: 1em 0.5em 1em 0px;
     background: transparent;
-    border: 2px solid var(--textcolor);
     color: var(--textcolor);
     transition: .3s ease;
 }
@@ -108,28 +107,32 @@ section.shop{
     background-color: var(--darkblue);
 }
 
-#servicesContainer{
+.shopBox{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 1.5em;
+    gap: 2em;
 }
 
-#servicesContainer > .box{
+.shopBox > .box{
     flex: 1 1 15em;
-    background-color: var(--bgcolor2);
+    background-color: var(--textcolor);
+    color: var(--lightblue);
     padding: 2em 1.5em 3em;
     border-radius: 2em;
     text-align: center;
     transition: .4s ease;
 }
 
-#servicesContainer > .box:hover{
-    border: 2px solid var(--standardcolor);
+.shopBox > .box:hover{
+    border: 2px solid var(--darkblue);
     transform: scale(105%);
 }
 
+.shopBox > h2{
+    font-size: 3em;
+}
 
 .box > h3{
     font-size: 2.5em;

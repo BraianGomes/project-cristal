@@ -24,7 +24,9 @@
 html{
     font-size: 70%;
     overflow-x: hidden;
-    
+    scroll-behavior: smooth;
+    scroll-padding-top: 6em;
+
 }
 
 body{
@@ -136,6 +138,7 @@ section.shop{
 }
 
 .shopBox > h2{
+    margin-top: 2em;
     font-size: 3em;
 }
 

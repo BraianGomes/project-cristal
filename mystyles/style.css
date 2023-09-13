@@ -38,9 +38,16 @@ section{
     padding: 10em 10% 2em;
 }
 
+header > img{
+    background-color: black;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
 .cabeca{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     z-index: 100;
     background-color: var(--textcolor);
@@ -48,19 +55,17 @@ section{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 6px 6%;
+    padding: 10px 10%;
 }
 
-header > img{
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
+#navbar{
+    margin-top: 20px;
 }
 
 #navbar > a{
     font-size: 15px;
     color: var(--darkblue);
-    margin-left: 1em;
+    padding: 15px;
 }
 
 #navbar > a:hover,
@@ -253,28 +258,28 @@ section.best{
     font-size: 25px;
     color: var(--clr);
     margin: 0px 3px;
-    opacity: .7;
+    opacity: .8;
 }
 
 .cardContent > button{
     position: relative;
-    padding: 10px 30px;
-    margin-top: 1.5em;
+    padding: 7px 17px;
+    margin-top: 1.2em;
     background-color: var(--clr);
     outline: none;
-    border-radius: 1em;
+    border-radius: 8px;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.497);
     cursor: pointer;
-    font-size: 1em;
+    font-size: 12px;
     color: #fff;
     font-weight: bold;
-    opacity: .7;
+    opacity: .8;
 }
 
 .cardContent > button::before{
     content: '';
     position: absolute;
-    top: 5px;
+    top: 2px;
     left: 50%;
     transform: translateX(-50%);
     width: 60%;

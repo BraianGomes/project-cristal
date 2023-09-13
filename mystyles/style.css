@@ -111,6 +111,12 @@ header > img{
     cursor: pointer;
 }
 
+.heading{
+    padding: 1em 0px 1em 0px;
+    text-align: center;
+    font-size: 2.5em;
+}
+
 section.shop{
     background-color: var(--darkblue);
 }

@@ -159,12 +159,12 @@ section.best{
     position: relative;
     max-width: 1200px;
     width: 100%;
-    background-color: yellow;
     padding: 25px;
 }
 
 .container .caixa{
     padding: 45px 25px;
+    overflow: hidden;
 }
 
 .image > img{
@@ -281,7 +281,29 @@ section.best{
     height: 5px;
     background-color: rgba(255, 255, 255, 0.497);
     border-radius: 5px;
+}
 
+.caixa .swiper-button-next,
+.caixa .swiper-button-prev{
+    color: var(--textcolor)
+}
+
+.caixa .swiper-button-next{
+    right: 0px;
+}
+
+.caixa .swiper-button-prev{
+    left: 0px;
+}
+
+.caixa .swiper-scrollbar{
+    
+}
+
+.caixa .swiper-pagination-bullet{
+    background-color: white;
+    width: 13px;
+    height: 13px;
 }
 
 /*---------------Contact--------------------*/

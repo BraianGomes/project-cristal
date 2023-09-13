@@ -1,7 +1,6 @@
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 200,
-  loop: true,
   centeredSlides: false,
   slidesPerGroupSkip: 1,
   grabCursor: true,
@@ -9,7 +8,6 @@ var swiper = new Swiper(".mySwiper", {
     enabled: true,
   },
   breakpoints: {
-   
     769: {
       slidesPerView: 2,
       slidesPerGroup: 2,
@@ -19,9 +17,7 @@ var swiper = new Swiper(".mySwiper", {
       slidesPerGroup: 3,
     },
   },
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
+ 
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -29,5 +25,6 @@ var swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+    dynamicBullets: true,
   },
 });

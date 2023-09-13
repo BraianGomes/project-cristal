@@ -38,17 +38,7 @@ section{
     padding: 10em 10% 2em;
 }
 
-header > img{
-    background-color: black;
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-}
-
-.cabeca{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+header{
     z-index: 100;
     background-color: var(--textcolor);
     position: fixed;
@@ -56,6 +46,18 @@ header > img{
     left: 0;
     width: 100%;
     padding: 10px 10%;
+}
+
+header > img{
+    width: 100%;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.cabeca{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 #navbar{
@@ -77,7 +79,7 @@ header > img{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2em;
+    gap: 4em;
     font-size: 1em;
     margin: 1em 0.5em 1em 0px;
     background: transparent;
@@ -173,8 +175,8 @@ section.best{
 }
 
 .image > img{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     object-fit: cover;
     border-radius: 25%;
     border: 2px solid black;
@@ -202,9 +204,9 @@ section.best{
     content: '';
     position: absolute;
     top: 50px;
-    left: 50px;
-    width: 2em;
-    height: 2em;
+    left: 25px;
+    width: 25px;
+    height: 25px;
     background-color: var(--textcolor);
     border-radius: 50%;
     opacity: .85;
@@ -214,9 +216,9 @@ section.best{
     content: '';
     position: absolute;
     top: 90px;
-    left: 70px;
-    width: 1em;
-    height: 1em;
+    left: 40px;
+    width: 15px;
+    height: 15px;
     background-color: var(--textcolor);
     border-radius: 50%;
     opacity: .85;
@@ -235,7 +237,7 @@ section.best{
     align-items: center;
     flex-direction: column;
     margin-top: 10px;
-    color: green;
+    color: var(--textcolor);
 }
 
 .selecaoProdutos .selecao{
@@ -264,7 +266,7 @@ section.best{
 .cardContent > button{
     position: relative;
     padding: 7px 17px;
-    margin-top: 1.2em;
+    margin-top: 12px;
     background-color: var(--clr);
     outline: none;
     border-radius: 8px;

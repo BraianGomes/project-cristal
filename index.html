@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<body>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +10,13 @@
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="mystyles/style.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
 
 
 </head>
@@ -71,8 +80,79 @@
 </section>
 
 <section class="best" id="best">
-    <h2>Best Shops</h2>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo non delectus sint dolor ex, ipsam qui nisi ipsa provident, corrupti harum libero commodi eius praesentium dolores exercitationem voluptates unde temporibus!</p>
+    <div class="container">
+        <div class="caixa mySwiper">
+            <div class="content swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="cardContent">
+                        <div class="image">
+                            <img src="images/correntes.jpg" alt="">
+                        </div>
+
+                        <div class="selecaoProdutos">
+                            <span class="selecao">Correntes</span>
+                            <span class="produtos">Compre</span>
+                        </div>
+
+                        <div class="bag">
+                            <i class='bx bxs-shopping-bag'style="--clr:#00BEB3"></i>
+                        </div>
+
+                        <button style="--clr:#00BEB3">Compre Agora</button>
+
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="cardContent">
+                        <div class="image">
+                            <img src="images/pulseiras.jpg" alt="">
+                        </div>
+
+                        <div class="selecaoProdutos">
+                            <span class="selecao">Pulseiras</span>
+                            <span class="produtos">Compre</span>
+                        </div>
+
+                        <div class="bag">
+                            <i class='bx bxs-shopping-bag'style="--clr:#00BEB3"></i>
+                        </div>
+
+                        <button style="--clr:#00BEB3">Compre Agora</button>
+
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="cardContent">
+                        <div class="image">
+                            <img src="images/brincos.jpg" alt="">
+                        </div>
+
+                        <div class="selecaoProdutos">
+                            <span class="selecao">Brincos</span>
+                            <span class="produtos">Compre</span>
+                        </div>
+
+                        <div class="bag">
+                            <i class='bx bxs-shopping-bag'style="--clr:#00BEB3"></i>
+                        </div>
+
+                        <button style="--clr:#00BEB3">Compre Agora</button>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-scrollbar"></div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </div>
 
 </section>
 
@@ -89,7 +169,10 @@
 
 </section>
 
-<body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script src="script.js"></script>
 
 </body>
 

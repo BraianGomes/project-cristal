@@ -23,7 +23,7 @@
 }
 
 html{
-    font-size: 60%;
+    font-size: 70%;
     overflow-x: hidden;
 }
 
@@ -82,7 +82,6 @@ header > img{
 
 #search > a:hover{
     background-color: var(--darkblue);
-    box-shadow: 0 0 20px var(--darkblue);
 }
 
 .button{
@@ -91,10 +90,10 @@ header > img{
     font-size: 1.2em;
     font-weight: bold;
     margin: 2em 0px 3em 1em;
-    background-color:var(--textcolor);
-    color: var(--darkblue);
+    background-color:var(--darkblue);
+    color: var(--textcolor);
     border-radius: 1.5em;
-    box-shadow: 0px 0px 1em var(--textcolor);
+    box-shadow: 0px 0px 1em var(--darkblue);
     letter-spacing: 1px;
 }
 
@@ -126,7 +125,6 @@ section.shop{
 }
 
 .shopBox > .box:hover{
-    border: 2px solid var(--darkblue);
     transform: scale(105%);
 }
 
@@ -147,9 +145,146 @@ section.about{
     background-color: var(--darkblue);
 }
 
+/* -----------------Best------------------------*/
+
 section.best{
     background-color: var(--lightblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
+
+.container{
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    background-color: yellow;
+    padding: 25px;
+}
+
+.container .caixa{
+    padding: 45px 25px;
+}
+
+.image > img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 25%;
+    border: 2px solid black;
+    opacity: .8;
+}
+
+.card{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 60% 40% 50% 45% / 45% 60% 35% 60%;
+    background-color: transparent;
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.1), 
+    5px 25px 20px rgba(0, 0, 0, .1), 
+    5px 20px 30px rgba(0, 0, 0, 0.1), 
+    inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+    transition: .4s ease-in-out;
+}
+
+.card:hover{
+    border-radius: 25%;
+}
+
+.card::before{
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 2em;
+    height: 2em;
+    background-color: var(--textcolor);
+    border-radius: 50%;
+    opacity: .85;
+}
+
+.card::after{
+    content: '';
+    position: absolute;
+    top: 90px;
+    left: 70px;
+    width: 1em;
+    height: 1em;
+    background-color: var(--textcolor);
+    border-radius: 50%;
+    opacity: .85;
+}
+
+.card .cardContent{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding: 30px;
+}
+
+.cardContent .selecaoProdutos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    color: green;
+}
+
+.selecaoProdutos .selecao{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.selecaoProdutos .produtos{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.cardContent .bag{
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.cardContent .bag > i{
+    font-size: 25px;
+    color: var(--clr);
+    margin: 0px 3px;
+    opacity: .7;
+}
+
+.cardContent > button{
+    position: relative;
+    padding: 10px 30px;
+    margin-top: 1.5em;
+    background-color: var(--clr);
+    outline: none;
+    border-radius: 1em;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.497);
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: bold;
+    opacity: .7;
+}
+
+.cardContent > button::before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.497);
+    border-radius: 5px;
+
+}
+
+/*---------------Contact--------------------*/
 
 section.contact{
     background-color: var(--darkblue);

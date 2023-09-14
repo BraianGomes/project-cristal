@@ -23,7 +23,7 @@ html{
     font-size: 70%;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    scroll-padding-top: 6em;
+    scroll-padding-top: 1em;
 
 }
 
@@ -110,7 +110,7 @@ header > img{
 }
 
 .heading{
-    padding: 1em 0px 1em 0px;
+    padding: 1em 0px;
     text-align: center;
     font-size: 2.5em;
 }
@@ -142,7 +142,6 @@ section.shop{
 }
 
 .shopBox > h2{
-    margin-top: 2em;
     font-size: 3em;
 }
 
@@ -156,13 +155,13 @@ section.shop{
 }
 
 section.about{
-    background-color: var(--darkblue);
+    background-color: var(--lightblue);
 }
 
 /* -----------------Best------------------------*/
 
 section.best{
-    background-color: var(--lightblue);
+    background-color: var(--darkblue);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -194,17 +193,12 @@ section.best{
     position: relative;
     width: 350px;
     height: 350px;
-    border-radius: 60% 40% 50% 45% / 45% 60% 35% 60%;
+    border-radius: 25%;
     background-color: transparent;
     box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.1), 
     5px 25px 20px rgba(0, 0, 0, .1), 
     5px 20px 30px rgba(0, 0, 0, 0.1), 
     inset -20px -20px 25px rgba(255, 255, 255, 0.9);
-    transition: .4s ease-in-out;
-}
-
-.card:hover{
-    border-radius: 25%;
 }
 
 .card::before{
@@ -299,7 +293,8 @@ section.best{
 
 .caixa .swiper-button-next,
 .caixa .swiper-button-prev{
-    color: var(--textcolor)
+    color: var(--textcolor);
+    margin-top: 3em;
 }
 
 .caixa .swiper-button-next{
@@ -319,7 +314,7 @@ section.best{
 /*---------------Contact--------------------*/
 
 section.contact{
-    background-color: var(--darkblue);
+    background-color: var(--lightblue);
 }
 #social{
     display: flex;

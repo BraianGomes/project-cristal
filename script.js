@@ -50,4 +50,19 @@ window.onscroll = () => {
       });
     }
   });
-;}
+
+
+/*-----------------Adicionando Menu------------------*/
+  let menuBar = document.querySelector("#open");
+  let navbar = document.querySelector("#navbar");
+
+  menuBar.onclick = () => {
+    menuBar.classList.toggle("bx-x");
+    navbar.classList.toggle("active");
+  };
+
+  navbar.classList.remove('active');
+};
+
+
+

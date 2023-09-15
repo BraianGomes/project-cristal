@@ -50,13 +50,13 @@ header{
 
 #burguer{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
 }
 
-.open{
-    display: none;
-}
-
-header > img{
+#burguer > img{
     width: 100%;
     height: 40px;
     border-radius: 50%;

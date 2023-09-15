@@ -48,6 +48,10 @@ header{
     padding: 10px 10%;
 }
 
+#burguer{
+    display: flex;
+}
+
 .open{
     display: none;
 }

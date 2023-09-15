@@ -62,6 +62,16 @@ header{
     border-radius: 50%;
 }
 
+button#open{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+button{
+    background-color: green;
+}
+
 #navbar{
     display: none;
     position: absolute;

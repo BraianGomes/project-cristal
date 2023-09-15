@@ -17,7 +17,7 @@ var swiper = new Swiper(".mySwiper", {
       slidesPerGroup: 3,
     },
   },
- 
+
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -45,24 +45,21 @@ window.onscroll = () => {
       navLinks.forEach((links) => {
         links.classList.remove("active");
         document
-          .querySelector("header nav a[href*= " + id + "]")
-          .classList.add("active");
+      .querySelector("header nav a[href*= " + id + "]")
+      .classList.add("active");
       });
     }
   });
 
+  /*-----------------Adicionando Menu------------------*/
 
-/*-----------------Adicionando Menu------------------*/
   let menuBar = document.querySelector("#open");
   let navbar = document.querySelector("#navbar");
 
   menuBar.onclick = () => {
-    menuBar.classList.toggle("bx-x");
     navbar.classList.toggle("active");
   };
 
-  navbar.classList.remove('active');
+  menuBar.classList.remove("bx-x");
+  navbar.classList.remove("active");
 };
-
-
-

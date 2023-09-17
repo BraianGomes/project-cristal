@@ -20,22 +20,20 @@
 }
 
 html{
-    font-size: 70%;
     overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-padding-top: 1em;
-
 }
 
 body{
     min-height: 100vh;
     background-color: var(--lightblue);
     color: var(--textcolor);
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 section{
-    padding: 10em 10% 2em;
+    padding: 5em 10% 3em;
 }
 
 header{
@@ -63,37 +61,36 @@ header{
 }
 
 button#open{
-    height: 30px;
-    width: 30px;
+    background-color: var(--darkblue);
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
     cursor: pointer;
-}
-
-button{
-    background-color: green;
 }
 
 #navbar{
     display: none;
     position: absolute;
-    top: 100%;
+    top:100%;
     left: 0px;
-    width: 30%;
+    width: 35%;
     padding: 15px 3%;
-    background-color: transparent;
+    background-color: var(--textcolor);
+    border-radius: 0px 0px 10px 0px;
     border-top: 2px solid rgba(0, 0, 0, .2);
     box-shadow: 0px 8px 15px rgba(0, 0, 0, .2);
 }
 
 #navbar > a{
     display: block;
-    font-size: 15px;
-    color: white;
+    font-size: 1em;
+    color: black;
     margin: 3em 0px;
 }
 
 #navbar > a:hover,
 #navbar > a.active{
-    color: black;
+    color: var(--darkblue);
 }
 
 #navbar.active{
@@ -145,15 +142,14 @@ section.shop{
 }
 
 .shopBox{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     gap: 2em;
 }
 
 .shopBox > .box{
-    flex: 1 1 15em;
     background-color: var(--textcolor);
     color: var(--lightblue);
     padding: 2em 1.5em 3em;
@@ -163,11 +159,11 @@ section.shop{
 }
 
 .shopBox > .box:hover{
-    transform: scale(105%);
+    transform: scale(103%);
 }
 
 .shopBox > h2{
-    font-size: 3em;
+    margin-top: 2.5em;
 }
 
 .box > h3{
@@ -363,6 +359,7 @@ section.contact{
 }
 
 #social > a:hover{
-    background-color: var(--lightblue);
-    box-shadow: 0 0 20px var(--lightblue);
+    background-color: var(--textcolor);
+    box-shadow: 0 0 25px var(--textcolor);
+    color: var(--lightblue);
 }

@@ -60,12 +60,27 @@ header{
     border-radius: 50%;
 }
 
-button#open{
-    background-color: var(--darkblue);
-    width: 80px;
+.open{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 1.4em;
+    width: 120px;
     height: 40px;
-    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    background-color: var(--darkblue);
+    color: var(--textcolor);
+    box-shadow: 0px 0px 1em var(--darkblue);
+    border-radius: 20px;
     cursor: pointer;
+}
+
+.open:hover{
+    box-shadow: none;
 }
 
 #navbar{

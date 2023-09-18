@@ -53,7 +53,7 @@ window.onscroll = () => {
 
   /*-----------------Adicionando Menu------------------*/
 
-  let menuBar = document.querySelector("#open");
+  let menuBar = document.querySelector(".open");
   let navbar = document.querySelector("#navbar");
 
   menuBar.onclick = () => {

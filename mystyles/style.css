@@ -98,18 +98,29 @@ header{
     left: 0;
     width: 30%;
     padding: 15px 3%;
-    background-color:var(--darkblue);
+    background-color: var(--textcolor);
     border-radius: 0px 0px 15px 0px;
-    box-shadow: 0px 5px 15px black;
 }
 
 #block > a{
     font-size: 15px;
-    color: var(--textcolor);
+    color: var(--lightblue);
     margin: 2.5em 10px;
     transition: .3s;
     animation: slideNav .5s ease forwards;
     animation-delay: calc(.2s * var(--bar));
+}
+
+@keyframes slideNav {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 #navbar.active{

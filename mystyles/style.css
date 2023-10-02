@@ -33,7 +33,7 @@ body{
 }
 
 section{
-    padding: 15em 10% 3em;
+    padding: 10em 10% 3em;
 }
 
 header{
@@ -136,9 +136,9 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4em;
+    gap: 11em;
     font-size: 1em;
-    margin: 1em 0.5em 1em 0px;
+    margin: 1em 0.5em 1em 200px;
     background: transparent;
     color: var(--textcolor);
     transition: .3s ease;
@@ -187,7 +187,7 @@ section.shop{
 .shopBox > .box{
     background-color: var(--textcolor);
     color: var(--lightblue);
-    padding: 2em 1.5em 3em;
+    padding: 2em 1.5em;
     border-radius: 2em;
     text-align: center;
     transition: .4s ease;
@@ -197,17 +197,13 @@ section.shop{
     transform: scale(103%);
 }
 
-.shopBox > h2{
-    margin-top: 2.5em;
-}
-
 .box > h3{
     font-size: 2.5em;
 }
 
 .box > p{
     font-size: 1.2em;
-    margin: 1em 0px 1em;
+    margin: 1em 0px;
 }
 
 section.about{

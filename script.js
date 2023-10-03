@@ -53,8 +53,8 @@ window.onscroll = () => {
 
   /*-----------------Adicionando Menu------------------*/
 
-  let menuBar = document.querySelector("#block");
-  let navbar = document.querySelector("#navbar");
+  let menuBar = document.querySelector(".links");
+  let navbar = document.querySelector(".menu");
 
   menuBar.onclick = () => {
     navbar.classList.toggle("active");
@@ -63,12 +63,13 @@ window.onscroll = () => {
   menuBar.classList.remove("bx-x");
   navbar.classList.remove("active");
 };
+;
 
 
 
 
 
-
+/*
 <header>
         <div id="burguer">
             <img src="images/Cristal’s+ World.png" alt="">
@@ -169,19 +170,4 @@ window.onscroll = () => {
 }
 
 
-
-#search{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 11em;
-    font-size: 1em;
-    margin: 1em 0.5em 1em 200px;
-    background: transparent;
-    color: var(--textcolor);
-    transition: .3s ease;
-}
-
-#search > a:hover{
-    background-color: var(--darkblue);
-}
+*/

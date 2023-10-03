@@ -72,6 +72,10 @@ header{
     color: yellow;
 }
 
+#navbar{
+    display: none;
+}
+
 nav{
     display: flex;
     align-items: center;

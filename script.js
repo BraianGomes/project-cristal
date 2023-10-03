@@ -53,8 +53,8 @@ window.onscroll = () => {
 
   /*-----------------Adicionando Menu------------------*/
 
-  let menuBar = document.querySelector(".links");
-  let navbar = document.querySelector(".menu");
+  let menuBar = document.querySelector("#block");
+  let navbar = document.querySelector("#navbar");
 
   menuBar.onclick = () => {
     navbar.classList.toggle("active");
@@ -130,9 +130,7 @@ window.onscroll = () => {
     box-shadow: none;
 }
 
-#navbar{
-    display: none;
-}
+
 
 #block{
     display: flex;

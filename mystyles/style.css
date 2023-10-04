@@ -108,14 +108,15 @@ header {
   align-items: center;
   height: 100vh;
   background-color: var(--textcolor);
-  gap: 3.5em;
+  gap: 7em;
+  opacity: .93;
 }
 
 #links > a {
   text-align: center;
   font-size: 1.5em;
   color: var(--texcolor2);
-  transition: 0.4s;
+  transition: 0.3s;
   animation: slideNav 0.5s ease forwards;
   animation-delay: calc(0.2s * var(--bar));
 }

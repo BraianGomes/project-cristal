@@ -35,7 +35,7 @@ body{
 
 section{
     height: auto;
-    padding: 10em 10% 3em;
+    padding: 7em 10% 3em;
 }
 
 header{
@@ -359,8 +359,8 @@ section.contact{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
-    margin: 1.5em 1em 2em 0px;
+    font-size: 1.7em;
+    margin-top: 2em;
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -408,7 +408,7 @@ section.contact{
 }
 
 #footerTop > a > i{
-    font-size: 15px;
+    font-size: 1em;
     color: var(--darkblue);
 }
 

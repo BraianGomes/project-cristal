@@ -17,6 +17,7 @@
     --lightblue:#42D5DD;
     --darkblue:#00BEB3;
     --textcolor:#fff;
+    --texcolor2:#000;
 }
 
 html{
@@ -57,7 +58,7 @@ header{
 .topNav > span{
     position: absolute;
     left: 5%;
-    color: var(--darkblue);
+    color: var(--texcolor2);
 }
 
 .topNav > h2{
@@ -87,7 +88,7 @@ header{
     background-color: var(--textcolor);
     font-size: 2.5em;
     display: block; 
-    color: black;
+    color: var(--texcolor2);
 }
 
 #open:hover{
@@ -105,14 +106,14 @@ header{
     justify-content: start;
     align-items: center;
     height: 100vh;
-    background-color: white;
+    background-color: var(--textcolor);
     gap: 3.5em;
 }
 
 #links > a{
     text-align: center;
     font-size: 1.5em;
-    color: green;
+    color: var(--texcolor2);
     transition: .4s;
 }
 
@@ -126,7 +127,7 @@ header{
 
 #links > a:hover,
 #links > a.active{
-    color: fuchsia;
+    color: var(--darkblue);
 }
 
 .button{
@@ -218,7 +219,7 @@ section.best{
     height: 80px;
     object-fit: cover;
     border-radius: 25%;
-    border: 2px solid black;
+    border: 2px solid var(--texcolor2);
     opacity: .8;
 }
 
@@ -307,7 +308,7 @@ section.best{
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.497);
     cursor: pointer;
     font-size: 12px;
-    color: #fff;
+    color: var(--textcolor);
     font-weight: bold;
     opacity: .8;
 }
@@ -339,7 +340,7 @@ section.best{
 }
 
 .caixa .swiper-pagination-bullet{
-    background-color: white;
+    background-color: var(--textcolor);
     width: 13px;
     height: 13px;
 }

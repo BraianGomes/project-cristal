@@ -22,7 +22,7 @@
 html{
     overflow-x: hidden;
     scroll-behavior: smooth;
-    scroll-padding-top: 1em;
+    scroll-padding-top: 2em;
 }
 
 body{
@@ -30,9 +30,11 @@ body{
     background-color: var(--lightblue);
     color: var(--textcolor);
     font-size: 1em;
+    transition: .5s;
 }
 
 section{
+    height: auto;
     padding: 10em 10% 3em;
 }
 
@@ -41,13 +43,13 @@ header{
     position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
 }
 
 .topNav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100vw;
     padding: 10px 25px;
     background-color: red;
 }
@@ -62,58 +64,65 @@ header{
 
 .topNav > ul > li{
     margin: 0px 25px;
+    color: gold;
 }
 
-.topNav > a{
-    color: green;
-}
-
-.topNav > a:hover{
+.topNav > ul > li:hover{
     color: yellow;
+    cursor: pointer;
 }
 
-#navbar{
+#downNav{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     background-color: black;
 }
 
 .logo > img{
-    width: 40px;
-    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
 }
 
-.open{
-    font-size: 2em;
-    text-decoration: none;
+#open{
+    font-size: 3.5em;
+    display: block; 
+    color: blue;
+}
+
+#open:hover{
     color: red;
-}
-
-.open:hover{
-    box-shadow: none;
     cursor: pointer;
 }
 
-.menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2em;
-    background-color: green;
+#navbar{
+    display: none;
 }
 
-.menu > li{
-    font-size: 15px;
+#links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    gap: 2em;
+}
+
+#links > a{
+    text-align: center;
+    font-size: 1.5em;
+    color: green;
+    transition: .4s;
 }
 
 #navbar.active{
     display: block;
 }
 
-#block > a:hover,
-#block > a.active{
-    color: black;
+#links > a:hover,
+#links > a.active{
+    color: fuchsia;
 }
 
 .button{

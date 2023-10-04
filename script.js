@@ -29,6 +29,16 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+/*--------------Adicionando Menu---------------*/
+
+let menuBar = document.querySelector("#open");
+let navbar = document.querySelector("#navbar");
+
+menuBar.onclick = () => {
+  menuBar.classList.toggle("bx-x");
+  navbar.classList.toggle("active");
+};
+
 /*--------------Fixando Procura-------------------*/
 
 let allSection = document.querySelectorAll("section");
@@ -45,108 +55,24 @@ window.onscroll = () => {
       navLinks.forEach((links) => {
         links.classList.remove("active");
         document
-      .querySelector("header nav a[href*= " + id + "]")
-      .classList.add("active");
+          .querySelector("header nav a[href*= " + id + "]")
+          .classList.add("active");
       });
     }
   });
 
-  /*-----------------Adicionando Menu------------------*/
+  /*------------stick navbar -------------*/
 
-  let menuBar = document.querySelector(".links");
-  let navbar = document.querySelector(".menu");
-
-  menuBar.onclick = () => {
-    navbar.classList.toggle("active");
-  };
+  let header = document.querySelector("header");
+  header.classList.toggle("sticky", window.scrollY > 100);
 
   menuBar.classList.remove("bx-x");
   navbar.classList.remove("active");
 };
-;
-
-
 
 
 
 /*
-<header>
-        <div id="burguer">
-            <img src="images/Cristal’s+ World.png" alt="">
-            <button class="open"><i class='bx bx-menu'></i></button>
-        </div>
-        <menu>
-            <nav id="navbar">
-                <div id="block">
-                    <a href="#shop" class="active">Shop</a>
-                    <a href="#about" >About Us</a>
-                    <a href="#best" >BestSellers</a>
-                    <a href="#contact" >Contact Us</a>
-                </div>
-            </nav>
-
-            <div id="search">
-                <a href="#"><i class='bx bx-search'></i></a>
-                <a href="#"><i class='bx bx-cart'></i></a>
-            </div>
-        </menu>
-    </header>
-
-
-
-    
-#burguer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5em;
-}
-
-#burguer > img{
-    width: 100%;
-    height: 120px;
-}
-
-.open{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    font-size: 1.4em;
-    width: 120px;
-    height: 40px;
-    padding: 10px;
-    margin-top: 10px;
-    overflow: hidden;
-    text-decoration: none;
-    background-color: var(--darkblue);
-    color: var(--textcolor);
-    box-shadow: 0px 0px 1em var(--darkblue);
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.open:hover{
-    box-shadow: none;
-}
-
-
-
-#block{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    text-align: center;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 30%;
-    padding: 15px 3%;
-    background-color: var(--textcolor);
-    border-radius: 0px 0px 15px 0px;
-}
 
 #block > a{
     font-size: 15px;

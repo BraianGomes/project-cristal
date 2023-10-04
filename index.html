@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cristal's World</title>
 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="mystyles/style.css">
+    <link rel="stylesheet" href="mystyles/allstyle.css" media="all">
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -28,21 +28,26 @@
             </ul>
         </div>
 
-        <nav id="navbar">
-
+        <div id="downNav">
             <div class="logo">
-                <img src="images/cristal’s world.png" alt="logo">
-                <button class="open"><i class='bx bx-menu'></i></button>
+                <img src="images/cristal’s world.png" alt="logo" >
             </div>
-            
-            <ul class="menu">
-                <li><a href="#" style="--bar:1" class="active"></a>dada</li>
-                <li><a href="#" style="--bar:2"></a>dede</li>
-                <li><a href="#" style="--bar:3"></a>didi</li>
-                <li><a href="#" style="--bar:4"></a>dodo</li>
-                <li><a href="#" style="--bar:5"></a>dudu</li>
-            </ul>
-        </nav>
+
+            <div id="boxOpen">
+                <button><i class='bx bx-menu' id="open"></i></button>
+            </div>
+
+            <nav id="navbar">
+                <div id="links">
+                    <a href="#shop" style="--bar:1" class="active">shop</a>
+                    <a href="#about" style="--bar:2">dede</a>
+                    <a href="#best" style="--bar:3">didi</a>
+                    <a href="#contact" style="--bar:4">dodo</a>
+                    <a href="#" style="--bar:5">dudu</a>
+                </div>  
+            </nav>
+        </div>
+
     </header>
 
     <section class="shop" id="shop">
@@ -178,7 +183,7 @@
         <div id="social">
             <a href="#"><i class='bx bx-envelope'></i></a>
             <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#best"><i class='bx bxl-instagram'></i></a>
         </div>
 
 

@@ -10,6 +10,13 @@
     display: none;
   }
 
+  #logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 3em;
+  }
+
   #navbar {
     display: block;
   }
@@ -20,12 +27,13 @@
     justify-content: end;
     align-items: center;
     height: 50px;
-    padding: 1em 3%;
+    padding: 10px 3%;
+    opacity: 1;
+    background-color: red;
   }
 
   #links > a{
-    font-size: 20px;
-    padding: 6px 3%;
+    font-size: 15px;
   }
 
   .link1 {

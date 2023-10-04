@@ -70,30 +70,3 @@ window.onscroll = () => {
   navbar.classList.remove("active");
 };
 
-
-
-/*
-
-#block > a{
-    font-size: 15px;
-    color: var(--lightblue);
-    margin: 2.5em 10px;
-    transition: .3s;
-    animation: slideNav .5s ease forwards;
-    animation-delay: calc(.2s * var(--bar));
-}
-
-@keyframes slideNav {
-    0% {
-        transform: translateX(100px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-
-*/

@@ -55,7 +55,6 @@
   }
 }
 
-
 @media screen and (min-width: 998px) {
   html {
     font-size: 90%;
@@ -76,7 +75,6 @@
 
   .container {
     width: 800px;
-    
   }
 }
 
@@ -98,4 +96,9 @@
   #links > a{
     font-size: 1.5em;
   }
+
+  .container {
+    width: 1000px;
+  }
 }
+

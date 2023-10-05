@@ -220,7 +220,7 @@ section.best {
 .container {
   position: relative;
   max-width: 1200px;
-  width: 100%;
+  width: 350px;
   padding: 25px;
 }
 
@@ -240,7 +240,7 @@ section.best {
 
 .card {
   position: relative;
-  width: 50px;
+  width: 350px;
   height: 350px;
   border-radius: 20%;
   background-color: transparent;

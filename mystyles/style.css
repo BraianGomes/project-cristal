@@ -75,14 +75,15 @@ header {
 
 .logo {
   position: absolute;
-  left: 5%;
+  left: 0%;
 }
 
 #logo {
-  width: 45px;
-  height: 45px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   margin-left: 1em;
+  background-color: transparent;
 }
 
 #open {

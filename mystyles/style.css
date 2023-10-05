@@ -203,12 +203,12 @@ section.shop {
   margin: 1em 0px;
 }
 
+/* -----------------About------------------------*/
 section.about {
   background-color: var(--lightblue);
 }
 
 /* -----------------Best------------------------*/
-
 section.best {
   background-color: var(--darkblue);
   display: flex;
@@ -391,6 +391,8 @@ section.contact {
   color: var(--lightblue);
 }
 
+
+/*----------------Footer---------------------*/
 #footer {
   display: flex;
   flex-direction: row;

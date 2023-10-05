@@ -1,21 +1,30 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 750px) {
+:root {
+  --lightblue: #42d5dd;
+  --darkblue: #00beb3;
+  --textcolor: #fff;
+  --texcolor2: #000;
+}
+
+@media screen and (min-width: 768px) {
 
   html{
-    font-size: 90%;
+    font-size: 80%;
 }
 
   #open {
     display: none;
   }
 
-  #logo {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-top: 3em;
-  }
+.logo {
+  left: 5%;
+}
+
+#logo {
+  width: 110px;
+  height: 110px;
+}
 
   #navbar {
     display: block;
@@ -29,7 +38,7 @@
     height: 50px;
     padding: 10px 3%;
     opacity: 1;
-    background-color: red;
+    background-color:var(--textcolor);
   }
 
   #links > a{
@@ -39,5 +48,44 @@
   .link1 {
     margin-top: 0em;
   }
+}
 
+
+@media screen and (min-width: 998px) {
+  html {
+    font-size: 90%;
+  }
+
+  .logo {
+    left: 5%;
+  }
+  
+  #logo {
+    width: 115px;
+    height: 115px;
+  }
+
+  #links > a{
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 100%;
+  }
+
+  .logo {
+    left: 5%;
+  }
+  
+  #logo {
+    width: 120px;
+    height: 120px;
+  }
+  
+
+  #links > a{
+    font-size: 1.5em;
+  }
 }

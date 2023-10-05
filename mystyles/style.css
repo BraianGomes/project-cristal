@@ -24,7 +24,7 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 2em;
-  font-size: 80%;
+  font-size: 70%;
 }
 
 body {
@@ -75,14 +75,13 @@ header {
 
 .logo {
   position: absolute;
-  top: -15%;
-  left: 0%;
+  top: 0%;
+  left: 5%;
 }
 
 #logo {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%
+  width: 70px;
+  height: 70px;
 }
 
 #open {
@@ -241,9 +240,9 @@ section.best {
 
 .card {
   position: relative;
-  width: 350px;
+  width: 50px;
   height: 350px;
-  border-radius: 25%;
+  border-radius: 20%;
   background-color: transparent;
   box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.1),
     5px 25px 20px rgba(0, 0, 0, 0.1), 5px 20px 30px rgba(0, 0, 0, 0.1),

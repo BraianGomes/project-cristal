@@ -13,7 +13,12 @@
     font-size: 80%;
 }
 
-  #open {
+.topNav > h2 {
+  font-size: 2em;
+  margin-top: .5em;
+}
+
+#open {
     display: none;
   }
 
@@ -42,6 +47,7 @@
   }
 
   #links > a{
+    margin-right: 0.5em;
     font-size: 15px;
   }
 
@@ -70,7 +76,8 @@
   }
 
   #links > a{
-    font-size: 1em;
+    margin-right: 1.5em;
+    font-size: 1.5em;
   }
 
   .container {
@@ -94,7 +101,7 @@
   
 
   #links > a{
-    font-size: 1.5em;
+    font-size: 1.7em;
   }
 
   .container {

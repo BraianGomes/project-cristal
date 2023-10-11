@@ -10,7 +10,7 @@
 @media screen and (min-width: 768px) {
 
   html{
-    font-size: 80%;
+    font-size: 90%;
 }
 
 .topNav > h2 {
@@ -63,7 +63,7 @@
 
 @media screen and (min-width: 998px) {
   html {
-    font-size: 90%;
+    font-size: 95%;
   }
 
   .logo {
